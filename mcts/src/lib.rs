@@ -1,9 +1,10 @@
-use crate::game;
-use crate::{game::Game, node};
+mod node;
+
+use game::Game;
 use crate::node::MctsNode;
 use rand::{self, Rng};
-use core::{borrow, f32};
-use std::{cell::{Ref, RefCell}, rc::{Rc, Weak}};
+use core::f32;
+use std::{cell::RefCell, rc::Rc};
 
 pub struct Mcts<T: Game> {
     pub max_simulations: usize,

@@ -1,11 +1,8 @@
-pub mod mcts;
-mod node;
-mod game;
 mod tic_tac_toe;
 
+use mcts::Mcts;
 use game::Game;
 
-use crate::mcts::Mcts;
 use crate::tic_tac_toe::TicTacToe;
 
 fn main() {

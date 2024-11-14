@@ -1,5 +1,5 @@
-use std::{cell::{Ref, RefCell}, rc::{Rc, Weak}};
-use crate::game::Game;
+use std::{cell::RefCell, rc::{Rc, Weak}};
+use game::Game;
 
 pub struct MctsNode<T: Game> {
     pub scores: Vec<f32>,

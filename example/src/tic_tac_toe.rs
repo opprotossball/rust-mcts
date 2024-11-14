@@ -1,6 +1,6 @@
 use core::fmt;
 
-use crate::game::Game;
+use game::Game;
 
 #[derive(Clone)]
 pub struct TicTacToe {
